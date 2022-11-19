@@ -4,7 +4,7 @@ export const isPNG = file => file.type === 'image/png';
 
 export const isFileSizeGreaterThan = (file, sizeKB) => {
     return Math.round(file.size / 1024) > sizeKB;
-}
+};
 
 export const copyToClipboard = text => {
     const input = document.createElement('input');
