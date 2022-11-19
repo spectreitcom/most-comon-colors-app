@@ -1,6 +1,6 @@
 .file-uploader {
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,10 +15,43 @@
   &__preview {
     text-align: center;
     max-width: 60%;
+    margin-bottom: 1rem;
     > img {
       max-width: 100%;
       height: auto;
     }
+  }
+
+  &__input {
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    margin-bottom: 1rem;
+  }
+
+  &__submit-btn {
+    background-color: coral;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: opacity .2s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+
+  }
+
+  &__error {
+    color: red;
   }
 
 }
