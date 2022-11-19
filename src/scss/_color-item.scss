@@ -1,0 +1,13 @@
+.color-item {
+  border: 1px solid #fff;
+  width: 25%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform .3s;
+  padding: 1rem;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
