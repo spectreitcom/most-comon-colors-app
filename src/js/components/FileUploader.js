@@ -63,7 +63,7 @@ function FileUploader({onSubmit}) {
         </div>
 
         <div>
-            <button type="button" disabled={!!error || !isFileValid(file)} onClick={() => onSubmit(file)}>Submit</button>
+            <button className="file-uploader__submit-btn" type="button" disabled={!!error || !isFileValid(file)} onClick={() => onSubmit(file)}>Submit</button>
         </div>
 
     </div>
